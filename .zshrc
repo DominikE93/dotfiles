@@ -9,7 +9,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 #ZSH_THEME="maran"
-ZSH_THEME="simple"
+#ZSH_THEME="simple"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -93,6 +94,7 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # export ARCHFLAGS="-arch x86_64"
 export PATH=$PATH:/opt/homebrew/bin/:~/.local/share/nvim/mason/bin/:~/.local/bin/:~/.krew/bin/
 export GHQ_ROOT=/Users/dominikschorn/projects/
+export NODE_PATH=$(npm root -g)
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -102,3 +104,6 @@ export GHQ_ROOT=/Users/dominikschorn/projects/
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vim=nvim
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
