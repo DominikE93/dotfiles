@@ -72,7 +72,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git fzf ssh-agent)
+plugins=(git fzf ssh-agent azure)
 
 source $ZSH/oh-my-zsh.sh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -93,8 +93,10 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 export PATH=$PATH:/opt/homebrew/bin/:~/.local/share/nvim/mason/bin/:~/.local/bin/:~/.krew/bin/
-export GHQ_ROOT=/Users/dominikschorn/projects/
+export GHQ_ROOT=/home/dominikschorn/projects/
 export NODE_PATH=$(npm root -g)
+export GIT_EDITOR=nvim
+export GPG_TTY=$(tty)
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
